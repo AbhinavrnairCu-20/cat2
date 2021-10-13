@@ -1,0 +1,133 @@
+<html>
+<head>
+<script type="text/javascript" src="validateform.js"></script>
+<style>
+  body
+    {
+	    margin:0px;
+	    background-color:#80ced6;
+	    background-image:url(image/background.jpg);
+	    color:#f9fcf5;
+	    font-family:Arial, Helvetica, sans-serif;
+    }
+    
+    #main{width:600px; height:auto; overflow:hidden; padding-bottom:20px; margin-left:auto; margin-right:auto; 
+    border-radius:5px; padding-left:10px; margin-top:100px; border-top:3px double #f1f1f1; 
+    border-bottom:3px double #f1f1f1; padding-top:20px;
+    }
+    
+    #main table{font-family:"Comic Sans MS", cursive;}
+    /* css code for textbox */
+    #main .tb{height:28px; width:230px; border:1px solid #f26724; color:#fd7838; font-weight:bold; border-left:5px solid #f7f7f7; opacity:0.9;}
+    
+    #main .tb:focus{height:28px; border:1px solid #f26724; outline:none; border-left:5px solid #f7f7f7;}
+
+    /* css code for button*/
+    #main .btn{width:150px; height:32px; outline:none;  color:#f7f7f7; font-weight:bold; border:0px solid #f26724; 
+    text-shadow: 0px 0.5px 0.5px #fff; border-radius: 2px; font-weight: 600; color: #f26724; letter-spacing: 1px; 
+    font-size:14px; background-color:#f1f1f1; -webkit-transition: 1s; -moz-transition: 1s; transition: 1s;}
+  
+    #main .btn:hover{background-color:#f26724; outline:none;  border-radius: 2px; color:#f1f1f1; border:1px solid #f1f1f1;
+    -webkit-transition: 1s; -moz-transition: 1s; transition: 1s; }
+</style>
+</head>
+ 
+<body>
+<form action="#" name="StudenSignupForm" onsubmit="return(validateHTMlform());">
+ 
+<div cellpadding="2" width="20%" bgcolor="99FFFF" align="center"
+cellspacing="2">
+ 
+<ul>
+<li>
+<center><font size=4><b>Student Registration Form</b></font></center>
+</li>
+</ul>
+ 
+ 
+<ul>
+<li>Address</li>
+<li><input type="text" name="personal_address"
+id="personaladdress" size="30"></li>
+</ul>
+ 
+<ul>
+<li>Gender</li>
+<li><input type="radio" name="sex" value="male" size="10">Male
+<input type="radio" name="sex" value="Female" size="10">Female</li>
+</ul>
+ 
+<ul>
+<li>City</li>
+<li><select name="City">
+<option value="-1" selected>select..</option>
+<option value="KOLKATA">KOLKATA</option>
+<option value="CHENNAI">CHENNAI</option>
+<option value="PUNE">PUNE</option>
+<option value="JAIPUR">JAIPUR</option>
+</select></li>
+</ul>
+ 
+<ul>
+<li>Course</li>
+<li><select name="Course">
+<option value="-1" selected>select..</option>
+<option value="B.Tech">B.TECH</option>
+<option value="MCA">MCA</option>
+<option value="MBA">MBA</option>
+<option value="BCA">BCA</option>
+</select></li>
+</ul>
+ 
+ 
+ 
+<ul>
+<li>State</li>
+<li><select Name="State">
+<option value="-1" selected>select..</option>
+<option value="New Delhi">NEW DELHI</option>
+<option value="Mumbai">MUMBAI</option>
+<option value="Goa">GOA</option>
+<option value="Bihar">BIHAR</option>
+</select></li>
+</ul>
+  
+  <ul>
+<li>District</li>
+<li><select name="Disulict">
+<option value="-1" selected>select..</option>
+<option value="Nalanda">NALANDA</option>
+<option value="UP">UP</option>
+<option value="Goa">GOA</option>
+<option value="Patna">PATNA</option>
+</select></li>
+ 
+</ul>
+  
+<ul>
+<li>PinCode</li>
+<li><input type="text" name="pin_code" id="pincode" size="30"></li>
+ 
+</ul>
+<ul>
+<li>student email</li>
+<li><input type="text" name="email_id" id="emailid" size="30"></li>
+</ul>
+ 
+<ul>
+<li>Date Of Birth</li>
+<li><input type="text" name="date_of_birth" id="dob" size="30"></li>
+</ul>
+ 
+<ul>
+<li>Mobile Number</li>
+<li><input type="text" name="mobilenumber" id="mobile_no" size="30"></li>
+</ul>
+<ul>
+<li><input type="reset"></li>
+<li colspan="2"><input type="submit" value="Submit Form" /></li>
+</ul>
+</div>
+</form>
+</body>
+</html>

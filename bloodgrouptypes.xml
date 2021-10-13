@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<?DOCTYPE note
+[
+<!ELEMENT note (name,branch,college,email)>
+<!ELEMENT name(#PCDATA)>
+<!ELEMENT branch (#PCDATA)>
+<!ELEMENT college (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+
+]?>
+<?xml-stylesheet type="text/xsl" href="guidelines.xsl" ?>
+<c_details>
+<details>
+<name> Abhianv R Nair</name>
+<branch>CS</branch>
+<college>CHRIST</college>
+<email>abhinavrnair@gmail.com</email>
+</details>
+<details>
+  <name> Adarsh Suresh</name>
+  <branch>MCA</branch>
+  <college>CHRIST, Lavasa</college>
+  <email>adarshsuresh516@gmail.com</email>
+</details>
+<details>
+  <name> Emmalu Joseph</name>
+  <branch>MCA</branch>
+  <college>ST Joseph</college>
+  <email>emmalu@mca.com</email>
+</details>
+
+
+</c_details>

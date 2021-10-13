@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+
+<fo:layout-master-set>
+<fo:simple-page-master master-name="A4">
+<fo:region-body />
+</fo:simple-page-master>
+</fo:layout-master-set>
+
+<fo:page-sequence master-reference="A4">
+<fo:flow flow-name="xsl-region-body">
+<fo:block>
+
+<fo:table-and-caption>
+<fo:table>
+<fo:table-column column-width="25mm"/>
+<fo:table-column column-width="25mm"/>
+
+<fo:table-header>
+<fo:table-row>
+<fo:table-cell>
+<fo:block font-weight="bold">Event</fo:block>
+</fo:table-cell>
+<fo:table-cell>
+<fo:block font-weight="bold">Date</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-header>
+
+<fo:table-body>
+<fo:table-row>
+<fo:table-cell>
+<fo:block>volleyball</fo:block>
+</fo:table-cell>
+<fo:table-cell>
+<fo:block>12 Dec 2021</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell>
+<fo:block>Badminton</fo:block>
+</fo:table-cell>
+<fo:table-cell>
+<fo:block>13 Dec 2021</fo:block>
+</fo:table-cell>
+</fo:table-row>
+</fo:table-body>
+
+</fo:table>
+</fo:table-and-caption>
+
+</fo:block>
+</fo:flow>
+</fo:page-sequence>
+
+</fo:root>
